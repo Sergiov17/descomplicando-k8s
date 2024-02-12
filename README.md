@@ -1,5 +1,5 @@
-<!-- # Descomplicando-k8s
-Descomplicando-Kubernetes
+# Descomplicando-k8s
+<!-- Descomplicando-Kubernetes
 
 Conceitos K8S
 
@@ -24,6 +24,3 @@ Controller Manager: É o controller manager quem garante que o cluster esteja no
 Kubelet: O kubelet pode ser visto como o agente do k8s que é executado nos nós workers. Em cada nó worker deverá existir um agente Kubelet em execução. O Kubelet é responsável por de fato gerenciar os pods, que foram direcionados pelo controller do cluster, dentro dos nós, de forma que para isto o Kubelet pode iniciar, parar e manter os contêineres e os pods em funcionamento de acordo com o instruído pelo controlador do cluster;
 
 Kube-proxy: Age como um proxy e um load balancer. Este componente é responsável por efetuar roteamento de requisições para os pods corretos, como também por cuidar da parte de rede do nó;  -->
-
-
-SAVE
