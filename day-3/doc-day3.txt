@@ -1,0 +1,11 @@
+Deployment
+
+Garantir as replicas dos Pods, e a saude do ambiente
+
+--Replicaset
+
+kubectl rollout undo deployment -n namespace 
+
+kubectl rollout history deployment -n namespace nome-deployment
+
+kubectl scale deployment -n namespace --replicas 5 deployment

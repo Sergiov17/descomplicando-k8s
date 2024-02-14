@@ -4,7 +4,7 @@ kubectl get pods -n (namespace) -o wide #traz mais infomrações -o yaml
 
 kubectl delete pods (nome do pod) -n (namespace) 
 
-kubectl get pods -L run  (-L labels)
+kubectl get pods -l run  (-l labels)
 
 kubectl run  sergio-pod --image nginx --port 80 -n (namespace) 
 
@@ -17,6 +17,12 @@ kubectl exec -ti sergio-pode -- bash  (executar um processo dentro do containers
 kubectl describe pod (nome_pod) -n (namespace)
 
 kubectl apply -f (FILE) manifesto.yaml
+
+kubectl rollout undo deployment -n namespace 
+
+kubectl rollout history deployment -n namespace nome-deployment
+
+kubectl scale deployment -n namespace --replicas 5 deployment
 
 comando para sobre-escrever um arquivo no  linux
 echo "TESTE TEXTO" > nome_do_arquivo (onde vai inserir a alteração)
