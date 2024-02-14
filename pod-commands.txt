@@ -1,0 +1,24 @@
+Comandos Para executar nos pods
+
+kubectl get pods -n (namespace) -o wide #traz mais infomrações -o yaml 
+
+kubectl delete pods (nome do pod) -n (namespace) 
+
+kubectl get pods -L run  (-L labels)
+
+kubectl run  sergio-pod --image nginx --port 80 -n (namespace) 
+
+kubectl run -ti sergio-pod --image alpine
+
+kubectl attach sergio-pod -c sergio-pod -ti   (atachar um processo no continer)
+
+kubectl exec -ti sergio-pode -- bash  (executar um processo dentro do containers)
+
+kubectl describe pod (nome_pod) -n (namespace)
+
+kubectl apply -f (FILE) manifesto.yaml
+
+comando para sobre-escrever um arquivo no  linux
+echo "TESTE TEXTO" > nome_do_arquivo (onde vai inserir a alteração)
+
+
